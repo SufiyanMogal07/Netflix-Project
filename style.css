@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;800;1000&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    color: white;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/bg.jpg");
+    background-size: max(1300px, 100vw);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.box {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    filter: opacity(0.70);
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    padding: 10px 0;
+}
+
+#logo {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100vh - 82px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.separation {
+    width: 100%;
+    height: 7px;
+    background-color: #232323;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn {
+    color: white;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.btn-transparent {
+    opacity: 1;
+    background-color: rgba(23, 23, 23, 0.7);
+}
+
+#lang-btn {
+    font-size: 14px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(243, 234, 234, 0.5);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-buttons img {
+    filter: invert(1);
+}
+
+.btn-red,
+.btn-red-sm {
+    background-color: red;
+    border: none;
+}
+
+.btn-red {
+    font-family: 'Martel Sans';
+    font-size: 23px;
+    font-weight: 800;
+    padding: 6px 29px;
+    border-radius: 4px;
+   
+}
+
+.btn-red-sm {
+    font-size: 14px;
+    padding: 7px 15px;
+}
+
+.main input {
+    width: 19vw;
+    font-size: 17px;
+    padding: 14px 95px 14px 20px;
+    border: 1px solid rgba(243, 234, 234, 0.5);
+    color: white;
+}
+
+.main input::placeholder {
+    color: rgb(197, 197, 197);
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 72vw;
+    margin: auto;
+    height: 70vh;
+    padding-block: 40px;
+    background: black;
+}
+
+.tv {
+    position: relative;
+    background: black;
+}
+
+.tv img {
+    position: relative;
+    z-index: 10;
+}
+
+.tv-1 img,
+.tv-2 img {
+    width: 555px;
+}
+
+.tv-1 video {
+    position: absolute;
+    width: 400px;
+    right: 77px;
+    top: 88px;
+}
+
+.kids img {
+    width: 350px;
+}
+
+.tv-2 video {
+    position: absolute;
+    width: 328px;
+    left: 106px;
+    top: 38px;
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.download {
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 20px;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 36px;
+    background-color: black;
+    padding: 12px 5px;
+}
+
+.download>h5 {
+    font-size: 14px;
+}
+
+.download sub {
+    color: #0071EB;
+    font-size: 10px;
+}
+
+.mobile>img {
+    width: 35vw;
+}
+
+.download>.small {
+    height: 75px;
+}
+
+.download #load {
+    height: 40px;
+    margin-left: 25px
+}
+
+.section-text h2 {
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.section-text p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.second,
+.fourth {
+    flex-direction: row-reverse;
+}
+
+.faq-container {
+    max-width: 75vw;
+    margin: auto;
+    padding-block: 80px;
+}
+
+.faq-container>h2 {
+    font-size: 46px;
+    padding: 15px;
+    text-align: center;
+}
+
+.faq-boxs {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 80px);
+    row-gap: 12px;
+    margin-block: 15px;
+}
+
+.faq-box {
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    font-size: 24px;
+    background-color: #2F2E2E;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    transition: all ease 0.2s;
+}
+
+.faq-box:hover {
+    background-color: #414141;
+}
+
+.faq-box img {
+    height: 31px;
+}
+
+.faq-buttons-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 20px;
+}
+
+footer {
+    max-width: 75vw;
+    margin: auto;
+    padding-block: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-block: 35px;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.footer-items a {
+    font-size: 14px;
+    color: #B3B3B3 !important;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+video::-webkit-media-text-track-container {
+    display: none !important;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    #logo {
+        width: 100px;
+    }
+
+    #lang-btn span {
+        display: none;
+    }
+
+    .main {
+        height: 80vh;
+    }
+
+    .btn-red-sm {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .hero {
+        height: calc(80vh - 82px);
+        gap: 15px;
+    }
+
+    .hero-buttons,
+    .faq-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .main input {
+        font-size: 14px;
+        width: 40vw;
+        border: 1px solid rgba(243, 234, 234, 0.5);
+    }
+
+    .btn-red {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 9px 28px;
+        border-radius: 4px;
+    }
+
+    .sections {
+        gap: 10px;
+        padding-block: 20px;
+        gap: 35px;
+    }
+
+    .first,
+    .third,
+    .second,
+    .fourth {
+        flex-direction: column;
+    }
+
+    .mobile>img {
+        width: 400px;
+    }
+
+    .download {
+        bottom: 20px;
+        width: 64%;
+    }
+
+    .download>h5 {
+        font-size: 10px;
+    }
+
+    .download>.small {
+        height: 55px;
+    }
+
+    .section-text h2 {
+        font-size: 22px;
+    }
+
+    .section-text p {
+        font-size: 12px;
+    }
+
+    .tv-1 img,
+    .tv-2 img {
+        width: 340px;
+    }
+
+    .tv-1 video {
+        width: 242px;
+        top: 55px;
+        right: 48px
+    }
+
+    .tv-2 video {
+        width: 200px;
+        top: 26px;
+        left: 75px;
+    }
+
+    .grid {
+        grid-column: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .footer-items {
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .faq-box {
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+
+    .faq-box img {
+        height: 20px;
+    }
+
+    .faq-container>h2 {
+        font-size: 30px;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .kids img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .tv-1 img,
+    .tv-2 img {
+        width: 240px;
+    }
+
+    .tv-1 video {
+        width: 190px;
+        top: 40px;
+        right: 16px;
+    }
+
+    .tv-2 video {
+        width: 158px;
+        top: 24px;
+        left: 40px
+    }
+
+    .mobile>img {
+        width: 280px;
+    }
+
+    .download>.small {
+        height: 46px;
+    }
+
+    .kids img {
+        width: 280px;
+    }
+
+    .download {
+        width: 65vw;
+        padding: 6px;
+        bottom: 15px;
+        gap: 19px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #logo {
+        width: 75px;
+    }
+    #lang-btn {
+        gap: 1px;
+    }
+}
