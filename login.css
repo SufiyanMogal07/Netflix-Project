@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;800;1000&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+    color: white;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+/* Login */
+
+.login-main {
+    background-image: url("assets/login-bg.jpg");
+    width: 100%;
+    height: 162vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.box {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    filter: opacity(0.55);
+    position: absolute;
+    top: 0;
+}
+
+.nav-bar {
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    padding: 25px 5px;
+}
+
+.nav-bar img {
+    position: relative;
+    z-index: 10;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.login-wrapper {
+    width: 100%;
+    height: 110vh;
+    /* border: 2px solid red; */
+}
+
+.login-section {
+    width: 450px;
+    height: max(455px,90%);
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    padding: 50px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.login-section h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.btn-transparent {
+    opacity: 1;
+    background: rgba(22, 22, 22, 0.7);
+    border: none;
+    padding: 17px 15px;
+    font-size: 0.9rem;
+    border: 0.8px solid #5F5E5E;
+    color: white;
+    border-radius: 6px;
+}
+
+.btn-transparent::placeholder {
+    color: rgb(186, 185, 185);
+}
+
+.red-btn {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    font-size: 1rem;
+    transition: all ease 0.5s;
+    border-radius: 6px;
+}
+
+.red-btn:hover {
+    background-color: rgb(153, 22, 29);
+}
+
+a {
+    text-decoration: none;
+}
+
+.second {
+    gap: 15px;
+}
+
+.second #rememberme {
+    scale: 1.5;
+}
+
+.second label {
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.forgot {
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+.sign-up a {
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.forgot:hover,.sign-up a:hover {
+    text-decoration: underline;
+    color: #bababa;
+}
+
+.sign-up span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.second small{
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+}
+
+.blue {
+    color: blue;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: calc(162vh - 110vh - 90px);
+    padding: 50px 0;
+    position: relative;
+    z-index: 10;
+}
+.footer-wrapper {
+    margin: auto;
+    width: 80vw;
+}
+.grid-section {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 30px;
+}
+.footer-wrapper span, .footer-wrapper a {
+    color: gray;
+    font-size: 15px;
+}
+.footer-wrapper a {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-bar {
+        max-width: 90vw;
+    }
+    .nav-bar img {
+        width: 110px;
+    }
+    .login-main {
+        background-image: url("");
+        height: 150vh;
+    }
+    .login-wrapper {
+        height: 90vh;
+    }
+    .login-section {
+        padding: 10px;
+        width: 90%;
+        background: none;
+    }
+    .second #rememberme {
+        scale: 1.3;
+    }
+    footer {
+        height: calc(150vh - 90vh - 75px);
+        padding: 30px;
+        /* background: none; */
+    }
+    .footer-wrapper {
+        width: 85vw;
+    }
+    .grid-section {
+        margin-top: 30px;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 25px;
+    }
+    .separation {
+        width: 100%;
+        height: 6px;
+        background-color: #232323;
+        position: relative;
+        z-index: 10;
+    }
+    .red-btn {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .grid-section {
+        grid-template-columns: 1fr;
+        row-gap: 18px;
+    }
+}

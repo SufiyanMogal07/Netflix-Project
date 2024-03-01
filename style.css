@@ -30,7 +30,7 @@ body {
     background-color: black;
     width: 100%;
     height: 100%;
-    filter: opacity(0.70);
+    filter: opacity(0.68);
     position: absolute;
     top: 0;
 }
@@ -148,6 +148,9 @@ nav button {
 .btn-red-sm {
     font-size: 14px;
     padding: 7px 15px;
+}
+.btn-red-sm {
+    text-decoration: none;
 }
 
 .main input {
@@ -553,3 +556,5 @@ video::-webkit-media-text-track-container {
         gap: 1px;
     }
 }
+
+
