@@ -142,14 +142,13 @@ nav button {
     font-weight: 800;
     padding: 6px 29px;
     border-radius: 4px;
-   
 }
 
 .btn-red-sm {
     font-size: 14px;
     padding: 7px 15px;
 }
-.btn-red-sm {
+.btn-red-sm a{
     text-decoration: none;
 }
 
@@ -483,7 +482,9 @@ video::-webkit-media-text-track-container {
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
     }
-
+    footer {
+        max-width: 80vw;
+    }
     .footer-items {
         gap: 15px;
         align-items: flex-start;
